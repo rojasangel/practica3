@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    char l;
+
+    printf("Letras may�sculas (A-Z):\n");
+
+    for (l = 'A'; l <= 'Z'; l++) {
+        if (l == 'A') {
+            printf("Es la letra con la que inicia mi nombre: \n");
+        }
+
+        printf("%c - ", l);
+
+        if (l == 'A' || l == 'E' || l == 'I' || l== 'O' || l== 'U') {
+            printf("Vocal\n");
+        } else {
+            printf("Consonante\n");
+        }
+    }
+
+    return 0;
+}
+
