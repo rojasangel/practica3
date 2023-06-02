@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    char letra_inicial = 'A';
+    char letras_mayusculas[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    int i;
+    
+    printf("Letra   Tipo\n");
+    printf("----------------\n");
+    
+    for (i = 0; i < 26; i++) {
+        if (letras_mayusculas[i] == letra_inicial) {
+            printf("%c      %s (Letra inicial de mi nombre)\n", letras_mayusculas[i], (letras_mayusculas[i] == 'A' || letras_mayusculas[i] == 'E' || letras_mayusculas[i] == 'I' || letras_mayusculas[i] == 'O' || letras_mayusculas[i] == 'U') ? "Vocal" : "Consonante");
+        } else {
+            printf("%c      %s\n", letras_mayusculas[i], (letras_mayusculas[i] == 'A' || letras_mayusculas[i] == 'E' || letras_mayusculas[i] == 'I' || letras_mayusculas[i] == 'O' || letras_mayusculas[i] == 'U') ? "Vocal" : "Consonante");
+        }
+    }
+    
+    return 0;
+}
+
