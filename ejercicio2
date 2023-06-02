@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int num, i, sum = 0;
+    printf("Ingrese un n�mero: ");
+    scanf("%d", &num);
+    
+    if (num >= 0) {
+        for (i = 1; i <= num; i += 2) {
+            sum += i;
+        }
+    } else {
+        for (i = num; i <= 0; i += 2) {
+            sum += i;
+        }
+    }
+    
+    printf("La suma de los n�meros impares es %d\n", sum);
+    return 0;
+}
+
